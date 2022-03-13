@@ -1,9 +1,16 @@
 import React from 'react';
 import './App.css';
+import About from './components/About';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <About></About>
+      <Portfolio></Portfolio>
+      <Contact></Contact>
+    </div>
   );
 }
 
