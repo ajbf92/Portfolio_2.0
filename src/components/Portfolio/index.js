@@ -3,14 +3,13 @@ import React from 'react';
 function Portfolio() {
   return (
     <section>
-        <div className='portfolio' id='portfolio'>
-            <h2>Projects</h2>
-        </div>
+        <div className='portfolio' id='portfolio'></div>
         <div className="main-project">
             <a href="https://ajbf92.github.io/run-buddy/">
             <img src={require('../../images/run-buddy.png')} alt="" />
             </a>
         </div>
+        {/* <a href="https://github.com/ajbf92/run-buddy">Github Repo Click Here</a> */}
         <div className="projects-h3">
             <h3 className="left">Robot Gladiator Game</h3>
             <h3 className="right">Password Generator</h3>

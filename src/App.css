@@ -3,7 +3,7 @@
   margin: 0;
   Padding: 0;
   background-color: rgb(27, 147, 151);
-  background-clip: inherit;
+  /* background-clip: inherit; */
   color: white
 }
 .left {
@@ -71,9 +71,10 @@ nav ul li a:hover {
 .greetings {
   color:white;
   padding: 30px 10px 10px 10px;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: normal;
-  text-decoration: underline #5c005f;
+  
+  text-align: center;
 }
 
 /*hero section*/
@@ -85,26 +86,26 @@ nav ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   padding: 100px 0px;
-}
+} */
 .hero-content-image {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px;
+  padding: 20px 60px;
 }
 .hero-content-image img {
   width: 20vw;
-  border: 8px ridge #f7e225;
-} */
+  border: 8px ridge #5c005f;
+}
 
 /* about me section*/
 .about {
   display:flex;
   flex-direction: column;
   background-color: rgb(27, 147, 151);
-  background-clip: inherit;
+  /* background-clip: inherit; */
   padding: 20px 0px;
   justify-content: center;
   border-bottom: 10px ridge #5c005f;
@@ -120,20 +121,20 @@ nav ul li a:hover {
 .about p {
   padding: 20px;
   flex-wrap: wrap;
-  font-size: 20px;
+  font-size: 22px;
   color: white;
 }
 /*about me styling ends*/
 
 /*my work styling starts*/
-.portfolio {
+/* .portfolio {
   background-color: rgb(27, 147, 151);
   display:flex;
   flex-wrap: wrap;
   padding: px;
   justify-content: center;
   border-bottom: 10px ridge #5c005f;
-}
+} */
 .portfolio h2 {
   font-size: 50px;
   color: white;
@@ -215,6 +216,16 @@ nav ul li a:hover {
   color: #5c005f;
 }
 /* contact styling ends*/
+
+/* resume styling begins */
+/* resume styling ends */
+
+/* footer styling begins */
+.footer {
+padding: 10px;
+background-color: gray;
+}
+/* footer styling ends */
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */

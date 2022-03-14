@@ -1,30 +1,75 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+  const {
+    setContactSelected,
+    setAboutSelected,
+    setPortfolioSelected,
+    setResumeSelected,
+  } = props;
   return (
     <section>
-      <header> 
-      <h1>
-        <a href="./index.html">Alex Betancourt's Portfolio</a><br></br>
-      </h1>
-      </header> 
+      <header>
+        <h1>
+          Alex Betancourt's Portfolio<br></br>
+        </h1>
+      </header>
       <nav>
         <ul>
           <li>
-            <a href="#about">About Me</a>
+            <a
+              href="#about"
+              onClick={() => {
+                setContactSelected(false);
+                setResumeSelected(false);
+                setPortfolioSelected(false);
+                setAboutSelected(true);
+              }}
+            >
+              About Me
+            </a>
           </li>
           <li>
-            <a href="#portfolio">My Work</a>
+            <a
+              href="#portfolio"
+              onClick={() => {
+                setContactSelected(false);
+                setResumeSelected(false);
+                setPortfolioSelected(true);
+                setAboutSelected(false);
+              }}
+            >
+              My Work
+            </a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a
+              href="#resume"
+              onClick={() => {
+                setContactSelected(false);
+                setResumeSelected(true);
+                setPortfolioSelected(false);
+                setAboutSelected(false);
+              }}
+            >
+              Resume
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="#contact"
+              onClick={() => {
+                setContactSelected(true);
+                setResumeSelected(false);
+                setPortfolioSelected(false);
+                setAboutSelected(false);
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
-      
     </section>
   );
 }
