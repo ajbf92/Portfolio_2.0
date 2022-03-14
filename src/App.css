@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   Padding: 0;
+  background-color: rgb(27, 147, 151);
+  background-clip: inherit;
+  color: white
 }
 .left {
   justify-content: flex-start;
@@ -14,12 +17,12 @@
 header {
   display:flex;
   flex-wrap: wrap;
-  background-color: rgb(119, 28, 21);
+  background-color: rgb(27, 147, 151);
   padding: 20px 10px 0px 10px;
   justify-content: center;
-  border-top: 10px ridge #f7e225;
-  border-left: 10px ridge #f7e225;
-  border-right: 10px ridge #f7e225;
+  border-top: 10px ridge #5c005f;
+  border-left: 10px ridge #5c005f;
+  border-right: 10px ridge #5c005f;
   
 }
 header h1 {
@@ -28,7 +31,7 @@ header h1 {
   font-size: 60px;
   align-items: baseline;
   justify-content: center;
-  border-bottom: 10px double #f7e225;
+  border-bottom: 10px double #5c005f;
 }
 
 header a {
@@ -37,13 +40,13 @@ header a {
 }
 /*navigation bar*/
 nav {
-  background-color: rgb(119, 28, 21);
+  background-color: rgb(27, 147, 151);
   padding:20px;
   list-style: none;
   color: #ffffff;
-  border-bottom: 10px ridge #f7e225;
-  border-left: 10px ridge #f7e225;
-  border-right: 10px ridge #f7e225;
+  border-bottom: 10px ridge #5c005f;
+  border-left: 10px ridge #5c005f;
+  border-right: 10px ridge #5c005f;
 }
 nav ul {
   display: flex;
@@ -63,14 +66,14 @@ nav ul li a {
   
 }
 nav ul li a:hover {
-  color: #f7e225;
+  color: #5c005f;
 }
 .greetings {
-  color:rgb(119, 28, 21);
+  color:white;
   padding: 30px 10px 10px 10px;
   font-size: 25px;
   font-weight: normal;
-  text-decoration: underline #f7e225;
+  text-decoration: underline #5c005f;
 }
 
 /*hero section*/
@@ -97,40 +100,43 @@ nav ul li a:hover {
 } */
 
 /* about me section*/
-.about-me {
+.about {
   display:flex;
   flex-direction: column;
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: rgb(27, 147, 151);
+  background-clip: inherit;
+  padding: 20px 0px;
   justify-content: center;
-  border-bottom: 10px ridge rgb(119,28,21);
+  border-bottom: 10px ridge #5c005f;
 }
-.about-me h2 {
+.about h2 {
   display: flex;
   justify-content: center;
+  border-bottom: 10px ridge #5c005f;
   font-size: 50px;
-  color: #f7e225;
-  text-shadow: 1px 1px 1px rgb(119, 28, 21);
+  color: white;
+  text-shadow: 1px 1px 1px white;
 }
-.about-me p {
+.about p {
+  padding: 20px;
   flex-wrap: wrap;
   font-size: 20px;
-  color: rgb(119, 28, 21);
+  color: white;
 }
 /*about me styling ends*/
 
 /*my work styling starts*/
-.my-work {
-  background-color: #f7e225;
+.portfolio {
+  background-color: rgb(27, 147, 151);
   display:flex;
   flex-wrap: wrap;
   padding: px;
   justify-content: center;
-  border-bottom: 10px ridge rgb(119, 28, 21);
+  border-bottom: 10px ridge #5c005f;
 }
-.my-work h2 {
+.portfolio h2 {
   font-size: 50px;
-  color: rgb(119, 28, 21);
+  color: white;
   text-shadow: 1px 1px 1px #ffffff;
 }
 .main-project {
@@ -141,7 +147,7 @@ nav ul li a:hover {
 .main-project img {
   width: 100%;
   justify-content: center;
-  border: ridge 8px #f7e225;
+  border: ridge 8px #5c005f;
 }
 .projects-h3 {
   display: flex;
@@ -150,7 +156,7 @@ nav ul li a:hover {
   padding: 0 20px 10px 20px;
   margin-top: 20px;
   justify-content: space-between;
-  color: #f7e225;
+  color: #5c005f;
   text-shadow: 1px 1px 1px rgb(119, 28, 21);
 }
 .projects {
@@ -165,7 +171,7 @@ nav ul li a:hover {
 }
 .projects a img {
   width: 100%;
-  border: ridge 8px #f7e225;
+  border: ridge 8px #5c005f;
   justify-content: space-between;
   
 }
@@ -176,37 +182,37 @@ nav ul li a:hover {
 /*my work styling ends*/
 
 /*contact styling starts*/
-.contact-me {
+.contact {
   display:flex;
   flex-direction: column;
-  background-color: rgb(119, 28, 21);
+  background-color: rgb(27, 147, 151);
   padding: 20px;
   justify-content: center;
   border-top: 10px ridge #ffffff;
 
 }
-.contact-me h2 {
+.contact h2 {
   display: flex;
   justify-content: center;
   font-size: 50px;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #f7e225;
+  text-shadow: 1px 1px 1px white;
 }
-.contact-me p {
+.contact p {
   display: flex;
   justify-content: center;
   font-size: 20px;
   color: #ffffff;
 }
-.contact-me address {
+.contact address {
   display: flex;
   justify-content: center;
   font-size: 20px;
   color: #ffffff;
 }
-.contact-me address a {
+.contact address a {
   text-decoration: none;
-  color: #f7e225;
+  color: #5c005f;
 }
 /* contact styling ends*/
 
@@ -238,19 +244,19 @@ nav ul li a:hover {
   nav ul li {
       font-size: 20px;
   }
-  .about-me h2 {
+  .about h2 {
       font-size: 38px;
   }
-  .about-me p {
+  .about p {
       font-size: 18px;
   }
-  .my-work h2 {
+  .portfolio h2 {
       font-size: 38px;
   }
   .projects-h3 {
       font-size: 22px;
   }
-  .contact-me h2 {
+  .contact h2 {
       font-size: 36px;
   }
   
@@ -283,19 +289,19 @@ nav ul li a:hover {
       width: 35vw;
       border: 8px ridge #f7e225;
   }
-  .about-me {
+  .about {
       border-bottom: 8px ridge  rgb(119, 28, 21);
   }
-  .about-me h2 {
+  .about h2 {
       font-size: 38px;
   }
-  .about-me p {
+  .about p {
       font-size: 16px;
   }
-  .my-work {
+  .portfolio {
       border-bottom: 8px ridge  rgb(119, 28, 21);
   }
-  .my-work h2 {
+  .portfolio h2 {
       font-size: 38px;
   }
   .main-project img {
@@ -307,7 +313,7 @@ nav ul li a:hover {
   .projects a img {
       border: ridge 8px #f7e225;
   }
-  .contact-me h2 {
+  .contact h2 {
       font-size: 36px;
   }
  
@@ -339,19 +345,19 @@ nav ul li a:hover {
       width: 40vw;
       border: 5px ridge #f7e225;
   }
-  .about-me {
+  .about {
       border-bottom: 5px ridge  rgb(119, 28, 21);
   }
-  .about-me h2 {
+  .about h2 {
       font-size: 30px;
   }
-  .about-me p {
+  .about p {
       font-size: 18px;
   }
-  .my-work {
+  .portfolio {
       border-bottom: 5px ridge  rgb(119, 28, 21);
   }
-  .my-work h2 {
+  .portfolio h2 {
       font-size: 30px;
   }
   .main-project img {
@@ -363,13 +369,13 @@ nav ul li a:hover {
   .projects a img {
       border: ridge 5px #f7e225;
   }
-   .contact-me h2 {
+   .contact h2 {
        font-size: 30px;
   }
-  .contact-me p {
+  .contact p {
       font-size: 16px;
   }
-  .contact-me address {
+  .contact address {
       font-size: 16px;
   }
 }
@@ -400,23 +406,23 @@ nav ul li a:hover {
       width: 40vw;
       border: 5px ridge #f7e225;
   }
-  .about-me {
+  .about {
       border-bottom: 5px ridge  rgb(119, 28, 21);
   }
-  .about-me h2 {
+  .about h2 {
       font-size: 30px;
    }
-  .about-me p {
+  .about p {
       font-size: 16px;
   }
-  .my-work {
-      border-bottom: 5px ridge  rgb(119, 28, 21);
+  .portfolio {
+      border-bottom: 5px ridge  #3cff01;
   }
-  .my-work h2 {
+  .portfolio h2 {
       font-size: 30px;
   }
   .main-project img {
-      border: ridge 5px #f7e225;
+      border: ridge 5px #3cff01;
   }
   .projects-h3 {
       font-size: 14px;
@@ -424,13 +430,13 @@ nav ul li a:hover {
   .projects a img {
       border: ridge 5px #f7e225;
   }
-  .contact-me h2 {
+  .contact h2 {
       font-size: 30px;
   }
-  .contact-me p {
+  .contact p {
       font-size: 15px;
   }
-  .contact-me address {
+  .contact address {
       font-size: 16px;
   }
 }
