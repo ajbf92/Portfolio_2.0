@@ -14,33 +14,32 @@ function App() {
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   // console.log(aboutSelected,contactSelected,resumeSelected,portfolioSelected);
   return (
-    <div>
-      <Nav 
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      aboutSelected={aboutSelected}
-      setAboutSelected={setAboutSelected}
-      portfolioSelected={portfolioSelected}
-      setPortfolioSelected={setPortfolioSelected}
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}></Nav>
+    <>
+      <div className="content-container">
+        <Nav 
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
+        portfolioSelected={portfolioSelected}
+        setPortfolioSelected={setPortfolioSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}></Nav>
 
-      {/* checking which tab is active */}
-      {!aboutSelected && !resumeSelected && !portfolioSelected ? (
-        <Contact></Contact>
-      ) : !contactSelected && !resumeSelected && !aboutSelected ? (
-        <Portfolio></Portfolio>
-      ) : !contactSelected && !portfolioSelected && !aboutSelected ? (
-        <Resume></Resume>
-      ) : (
-        <About></About>
-      )}
-
-      <Footer></Footer>
-    </div>
-    
+        {/* checking which tab is active */}
+        {!aboutSelected && !resumeSelected && !portfolioSelected ? (
+          <Contact></Contact>
+        ) : !contactSelected && !resumeSelected && !aboutSelected ? (
+          <Portfolio></Portfolio>
+        ) : !contactSelected && !portfolioSelected && !aboutSelected ? (
+          <Resume></Resume>
+        ) : (
+          <About></About>
+        )}
+      </div>
+    <Footer className ='footer--pin'></Footer>
+ </>
   );
- 
 }
 
 export default App;
