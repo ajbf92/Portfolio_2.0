@@ -1,4 +1,6 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
+
 
 function Nav(props) {
   const {
@@ -7,6 +9,8 @@ function Nav(props) {
     setPortfolioSelected,
     setResumeSelected,
   } = props;
+
+  // console.log(props);
   
   return (
     <section>
@@ -18,8 +22,8 @@ function Nav(props) {
       <nav>
         <ul>
           <li>
-            <a
-              href="#about"
+            <NavLink default
+              to="/about"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
@@ -28,38 +32,37 @@ function Nav(props) {
               }}
             >
               About Me
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#portfolio"
+            <NavLink
+              to="/portfolio"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
                 setPortfolioSelected(true);
                 setAboutSelected(false);
-                
               }}
             >
               My Work
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#resume"
+            <NavLink
+              to="/resume"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(true);
                 setPortfolioSelected(false);
                 setAboutSelected(false);
-              }} isActive
+              }}
             >
               Resume
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#contact"
+            <NavLink
+              to="/contact"
               onClick={() => {
                 setContactSelected(true);
                 setResumeSelected(false);
@@ -68,7 +71,7 @@ function Nav(props) {
               }} 
             >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

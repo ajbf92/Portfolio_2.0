@@ -11,12 +11,13 @@ import Footer from "./components/Footer";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
-  const [aboutSelected, setAboutSelected] = useState(true);
+  const [aboutSelected, setAboutSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   // console.log(aboutSelected,contactSelected,resumeSelected,portfolioSelected);
+
   return (
-    <Router>
+    <Router path="/about">
       <div className="content-container">
         <Nav 
         aboutSelected={aboutSelected}
@@ -26,9 +27,11 @@ function App() {
         resumeSelected={resumeSelected}
         setResumeSelected={setResumeSelected}
         contactSelected={contactSelected}
-        setContactSelected={setContactSelected}></Nav>
+        setContactSelected={setContactSelected}>
+        </Nav>
 
         {/* checking which tab is active */}
+        
         {!aboutSelected && !resumeSelected && !portfolioSelected ? (
           <ContactForm></ContactForm>
         ) : !contactSelected && !resumeSelected && !aboutSelected ? (
@@ -40,7 +43,7 @@ function App() {
         )}
       </div>
     <Footer className ='footer--pin'></Footer>
- </Router>
+    </Router>
   );
 }
 

@@ -5,14 +5,24 @@
   background-color: rgb(0, 0, 0);
   color: white
 }
+.proficiencies{
+  margin:2rem;
+  
+  width: 60%;
+  flex-wrap: wrap;
+}
 .left {
+  display: inline-flex;
   justify-content: flex-start;
+  margin-left: 2rem;
 }
 .right {
   justify-content: flex-end;
+  margin-right: 2rem;
+  float: right;
 }
 .active{
-  color:#5c005f;
+  color:#0af71d;
 }
 /*header section*/
 header {
@@ -70,12 +80,12 @@ nav ul li a {
 nav ul li a:hover {
   color: #5c005f;
 }
+
 .greetings {
   color:white;
   padding: 30px 10px 10px 10px;
   font-size: 27px;
   font-weight: normal;
-  
   text-align: center;
 }
 
@@ -119,11 +129,7 @@ nav ul li a:hover {
 
 /*contact styling starts*/
 .contact {
-  /* display:flex;
-  flex-direction: column;
-  justify-content: center; */
   background-color: gray;
-  /* padding: 20px; */
   text-align: center;
 }
 .contact h2 {
@@ -133,23 +139,6 @@ nav ul li a:hover {
   color: #ffffff;
   text-shadow: 1px 1px 1px white;
 }
-/* 
-.contact p {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  color: #ffffff;
-}
-.contact address {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  color: #ffffff;
-}
-.contact address a {
-  text-decoration: none;
-  color: #5c005f;
-} */
 
 form {
 
@@ -164,13 +153,14 @@ form {
 }
 label{
   margin: 1rem;
+  font-weight: bold;
 }
 input {
   width:auto;
   font-size: 1rem;
   margin-left: 1rem;
   padding: 0.25rem;
-  border: 1px solid whitesmoke;
+  border: 2px solid whitesmoke;
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
@@ -191,11 +181,20 @@ textarea {
 /* contact styling ends*/
 
 /* resume styling begins */
-.resumeBtn {
-  
+.resume{
+  display: flex;
+  flex-direction: column;
+  margin-Top: 2rem;
+  align-items:center;
+ 
+}
+.resumeBtn a {
+  text-decoration: none;
+  color: #5c005f;
+  background-color: #10a51d;
 }
 button {
-	background: var(--primary);
+	background: #10a51d;
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -204,6 +203,8 @@ button {
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 15px;	
+  margin-left: 1rem;
+
 }
 .error-text{
   font-size: 1.25rem;
@@ -216,7 +217,6 @@ button {
   min-height: calc(100vh - 72px);
 }
 .footer--pin {
-  position: relative;
   left: 0;
   bottom: 0;
 }
@@ -224,16 +224,20 @@ button {
 padding: 10px;
 background-color: gray;
 border-Top: 10px ridge #5c005f;
-align-items: baseline;
+height: 7rem;
+
+align-content: center;
 }
 .footer-h2 {
-  display: inline;
+  display: inline-flex;
   color: hsl(298, 88%, 16%);
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bolder;
 }
 .footer-div {
   float: right;
   line-height: 1.2;
+  font-weight: bold;
   text-align: right;
   background-color: gray;
   

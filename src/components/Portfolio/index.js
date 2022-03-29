@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import bootstrap from "bootstrap";
+import { Container, Card, Button, Row, Col } from "react-bootstrap";
+
 import runBuddy from "../../images/run-buddy.png";
 import robotGladiator from "../../images/robot-gladiator.png";
 import passwordGenerator from "../../images/password-generator.png";

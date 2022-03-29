@@ -2,7 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <section className="footer footer--pin">
+    <section className="footer--pin">
+      <div className="footer">
         <h2 className="footer-h2" style={{ backgroundColor: "gray" }}>
           {" "}
           🐵 mojojojom{" "}
@@ -20,6 +21,13 @@ function Footer() {
         >
           Github
         </a>
+        <a className="footer-a"
+          href="https://stackoverflow.com/users/17091488/ajbf92?tab=profile"
+          style={{ color: "white"}}
+        >
+          Stackoverflow
+        </a>
+      </div>
       </div>
     </section>
   );
