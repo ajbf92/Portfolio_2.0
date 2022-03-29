@@ -12,7 +12,7 @@ A portfolio for future employers that provides some insight about myself, showca
 ## Usage 
 
 Portfolio Link & Preview:
-https://ajbf92.github.io/Portfolio_2.0/
+https://ajbf92.github.io/portfolio_2.0/
 
 ![ScreenShot](src/images/portfolio.png)
 
