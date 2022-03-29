@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import Nav from "./components/Nav";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import ContactForm from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
@@ -30,7 +30,7 @@ function App() {
 
         {/* checking which tab is active */}
         {!aboutSelected && !resumeSelected && !portfolioSelected ? (
-          <Contact></Contact>
+          <ContactForm></ContactForm>
         ) : !contactSelected && !resumeSelected && !aboutSelected ? (
           <Portfolio></Portfolio>
         ) : !contactSelected && !portfolioSelected && !aboutSelected ? (
