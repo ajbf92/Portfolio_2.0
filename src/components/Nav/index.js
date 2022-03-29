@@ -23,7 +23,7 @@ function Nav(props) {
         <ul>
           <li>
             <NavLink default
-              to="/about"
+              to="/"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
