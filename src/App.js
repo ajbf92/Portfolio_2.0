@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
-  const [aboutSelected, setAboutSelected] = useState(false);
+  const [aboutSelected, setAboutSelected] = useState(true);
   const [resumeSelected, setResumeSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   // console.log(aboutSelected,contactSelected,resumeSelected,portfolioSelected);
@@ -32,14 +32,14 @@ function App() {
 
         {/* checking which tab is active */}
         
-        {!aboutSelected && !resumeSelected && !portfolioSelected ? (
-          <ContactForm></ContactForm>
+        {!contactSelected && !resumeSelected && !portfolioSelected ? (
+          <About></About>
         ) : !contactSelected && !resumeSelected && !aboutSelected ? (
           <Portfolio></Portfolio>
         ) : !contactSelected && !portfolioSelected && !aboutSelected ? (
           <Resume></Resume>
         ) : (
-          <About></About>
+          <ContactForm></ContactForm>
         )}
       </div>
     <Footer className ='footer--pin'></Footer>
