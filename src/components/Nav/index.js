@@ -7,6 +7,7 @@ function Nav(props) {
     setPortfolioSelected,
     setResumeSelected,
   } = props;
+  
   return (
     <section>
       <header>
@@ -23,7 +24,7 @@ function Nav(props) {
                 setContactSelected(false);
                 setResumeSelected(false);
                 setPortfolioSelected(false);
-                setAboutSelected(true);
+                setAboutSelected(true); 
               }}
             >
               About Me
@@ -37,6 +38,7 @@ function Nav(props) {
                 setResumeSelected(false);
                 setPortfolioSelected(true);
                 setAboutSelected(false);
+                
               }}
             >
               My Work
@@ -50,7 +52,7 @@ function Nav(props) {
                 setResumeSelected(true);
                 setPortfolioSelected(false);
                 setAboutSelected(false);
-              }}
+              }} isActive
             >
               Resume
             </a>
@@ -63,7 +65,7 @@ function Nav(props) {
                 setResumeSelected(false);
                 setPortfolioSelected(false);
                 setAboutSelected(false);
-              }}
+              }} 
             >
               Contact
             </a>
