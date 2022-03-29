@@ -15,7 +15,7 @@ function App() {
   const [resumeSelected, setResumeSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   // console.log(aboutSelected,contactSelected,resumeSelected,portfolioSelected);
-
+  console.log(window.location.pathname);
   return (
     <Router path="/about">
       <div className="content-container">
