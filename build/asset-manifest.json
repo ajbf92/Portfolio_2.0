@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio_2.0/about/static/css/main.5d2829f7.css",
+    "main.js": "/Portfolio_2.0/about/static/js/main.65667f19.js",
+    "static/media/run-buddy.png": "/Portfolio_2.0/about/static/media/run-buddy.20dcf08e14e28f7816f4.png",
+    "static/media/password-generator.png": "/Portfolio_2.0/about/static/media/password-generator.e80fe8e919c429ad89aa.png",
+    "static/media/NGF.png": "/Portfolio_2.0/about/static/media/NGF.50b3d97a79077a9a9c0d.png",
+    "static/media/robot-gladiator.png": "/Portfolio_2.0/about/static/media/robot-gladiator.9e4ccc2173b8797f491f.png",
+    "static/media/schedule-banner.jpeg": "/Portfolio_2.0/about/static/media/schedule-banner.ba8749ddd8edbed18240.jpeg",
+    "static/media/Me.jpeg": "/Portfolio_2.0/about/static/media/Me.d0e1d1266b77c8f21e07.jpeg",
+    "static/media/Resume.pdf": "/Portfolio_2.0/about/static/media/Resume.7c838469418bd551408d.pdf",
+    "static/media/concierge-banner.jpg": "/Portfolio_2.0/about/static/media/concierge-banner.c857d508b9c00a076c7b.jpg",
+    "static/media/weather-banner.jpeg": "/Portfolio_2.0/about/static/media/weather-banner.4da272af878512f955ce.jpeg",
+    "index.html": "/Portfolio_2.0/about/index.html",
+    "main.5d2829f7.css.map": "/Portfolio_2.0/about/static/css/main.5d2829f7.css.map",
+    "main.65667f19.js.map": "/Portfolio_2.0/about/static/js/main.65667f19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d2829f7.css",
+    "static/js/main.65667f19.js"
+  ]
+}
