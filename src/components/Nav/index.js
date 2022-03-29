@@ -23,7 +23,7 @@ function Nav(props) {
         <ul>
           <li>
             <NavLink default
-              to="/"
+              to="/portfolio_2.0/about"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
@@ -36,7 +36,7 @@ function Nav(props) {
           </li>
           <li>
             <NavLink
-              to="/portfolio"
+              to="portfolio_2.0/portfolio"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
@@ -49,7 +49,7 @@ function Nav(props) {
           </li>
           <li>
             <NavLink
-              to="/resume"
+              to="portfolio_2.0/resume"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(true);
@@ -62,7 +62,7 @@ function Nav(props) {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              to="portfolio_2.0/contact"
               onClick={() => {
                 setContactSelected(true);
                 setResumeSelected(false);
